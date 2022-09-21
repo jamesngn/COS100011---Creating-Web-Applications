@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "description" content = "creating web applications"/>
+    <meta name = "keywords" content = "HTML, CSS, Javascript"/>
+    <meta name = "author" content = "Quang Nguyen"/>
+    <title>CWA Help Desk Appointment</title>
+</head>
+<body>
+    <a href="https://www.swinburne.edu.au/"><img src="logo.png" alt="swinburne-logo"></a>
+    <h1>CWA Help Desk Appointment</h1>
+    <p>The Help Desk is located at ATC620. Open 10:30 to 19:00 Monday to Friday.</p>
+    <p>Check Blackboard for when CWA tutors will be there.</p>
+
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <p>Student details</p>
+		
+        <label for="studentID">Student ID</label>
+        <input type="text" name="studentID" id="studentID" pattern="\d{7,10}">
+        <br><br>
+        <label for="givenName">Given Name</label>
+        <input type="text" name="givenName" id="givenName">
+        <label for="familyName">Family Name</label>
+        <input type="text" name="familyName" id="familyName">
+        <br><br>
+
+        <p>Your Unit</p>
+        <input type="radio" name="unit" id="cos10011" required>
+        <label for="cos10011">COS10011</label>
+    
+        <input type="radio" name="unit" id="cos60004">
+        <label for="cos60004">COS60004</label>
+
+        <input type="radio" name="unit" id="cos60007">
+        <label for="cos60007">COS60007</label>
+
+        <p>Your Tutor</p>
+        <label for="tutor">Your Tutor:</label>
+        <select name="tutorName" id="tutor" required>
+            <option value="">Please Select</option>
+            <option value="">Mr 1</option>
+            <option value="">Mr 2</option>
+        </select>
+
+        <p>Issue</p>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="html" id="html" checked>
+
+        <label for="css">CSS</label>
+        <input type="checkbox" name="css" id="css">
+
+        <label for="js">Javascript</label>
+        <input type="checkbox" name="js" id="js">
+
+        <label for="php">PHP</label>
+        <input type="checkbox" name="php" id="php">
+        
+        <label for="mysql">MYSQL</label>
+        <input type="checkbox" name="mysql" id="mysql">
+
+        <br><br>
+
+        <p>Description of Issue</p>
+        <textarea name="issue_description" id="issue_description" cols="40" rows="10"  placeholder="Write description of your problem here..."></textarea>
+
+        <p>Preferred Date/Time</p>
+        <label for="date">Date</label>
+        <input type="text" name="date" id="date" placeholder="dd/mm/yyyy" pattern= "((09|[1-2][0-9]|3[0-1])/08/2022)|(([0-2][0-9]|3[0-1])/(09|10|11)/2022)">
+
+        <br>
+        <label for="time">Time</label>
+        <input type="text" name="time" id="time" placeholder = "00:00" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]">
+
+        <br><br>
+        <input type="submit" value="Book">
+        <input type="reset" value="Reset form">
+    </form>
+</body>
+</html>

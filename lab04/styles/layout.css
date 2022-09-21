@@ -1,0 +1,72 @@
+/* filename: Quang Nguyen
+author: Quang Nguyen
+created: 13/08/2022
+last modified: 13/08/2022
+description: refers to lab04.html */
+header {
+    margin: 0.5em;
+    border: 1px solid darkgray;
+    padding: 0.5em;
+    background-color: lightgray;
+    text-align: center;
+}
+.menu {
+    display:inline-block;
+}
+aside {
+    margin: 1rem;
+    border: 4px inset purple;
+    padding: 1em;
+    background:url(images/fade.jpg) repeat-x top left;
+    width: 30%;
+    float: right;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+article {
+    min-width: 30em;
+}
+#lists, #tables, #images, #hyperlinks {
+    width: 50%;
+    text-align: center;
+}
+#lists {
+    float: left;
+}
+ol,ul,dl {
+    text-align: left;
+}
+table {
+    margin: auto;
+}
+#tables {
+    margin: auto;
+    float: right;
+}
+#hyperlinks {
+    clear:both;
+    float:left;
+}
+#images {
+    float:right;
+}
+figure {
+    border: 2px solid #ccc;
+}
+footer {
+    border-top: 4px double navy;
+    clear: both;
+}
+footer p {
+    display: inline-block;
+    width: 33%;
+}
+footer p:first-child{
+    float:left;
+}
+footer p:nth-child(2) {
+    text-align: center;
+}
+footer p:last-child{
+    float:right;
+    text-align: right;
+}

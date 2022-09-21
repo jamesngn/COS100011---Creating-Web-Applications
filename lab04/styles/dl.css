@@ -1,0 +1,25 @@
+/* filename: Quang Nguyen
+author: Quang Nguyen
+created: 13/08/2022
+last modified: 13/08/2022
+description: refers to lab04.html */
+
+dl {
+    border:4px double lightgray;
+    text-align: center;
+    float:left;
+}
+dl dt {
+    color: green;
+    font-weight: bold;
+    float:left;    
+}
+dl dd {
+    text-align: left;
+    display: inline-block;
+    float:right;
+    width: 50%;
+}
+dt::after {
+    color:red;
+}

@@ -1,0 +1,25 @@
+
+nav ul li {
+    list-style: none;
+    float:left;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    display:block;
+    padding:.625em 3.5em;
+    border-right:1px solid #bababa;
+}
+
+
+
+section img {
+    width:100%;        
+}
+#section1, #section2, #section3 {
+    float:left;
+    width:30%;
+    margin:0.5em;
+    text-align: justify;
+    
+}
