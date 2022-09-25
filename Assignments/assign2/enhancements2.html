@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Assignment 1 - COS10011" />
+    <meta name="keywords" content="HTML5, CSS" />
+    <meta name="author" content="Quang Nguyen"  />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancement 2</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class = "nav-container">
+            <a href="index.html"><img src="images/big-tv-seeklogo.com.svg" alt="tv-purchase-logo" class = "logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="enquire.html">Enquire</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="enhancements.html">Enhancements</a></li>
+                    <li><a href="enhancements2.html">Enhancements 2</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="enhancement-intro">I made two enhancements to my assignment 2. These are: </div>
+        <div>
+            <div class="content">
+                <p class = "enhancement-title">1. AJAX Js for dynamic web page</p>
+                <p>AJAX stands for Asynschronous JavaScript and XML, which helps the webpage use the XMLHttpRequest object to communicate with servers. It can send and receive information in various formats, including JSOn, XML, HTML and text files. In my assignment 2, I use AJAX Js to connect with JSON myproducts.json. This JSON file stores the information of my TV products in an object format (key-value pair), which helps me easily extend and maintain the webiste in case of having more product items.</p>
+                <p>The code I implemented this feature: </p>
+                <ul>
+                    <li><span>var xhr = new XMLHttpRequest();</span> This line of code is to create an object XMLHttpRequest, which helps the web page change without reloading the whole page.</li>
+                    <li><span>xhr.open('GET','myproducts.json',true); xhr.send();</span>This  line of code is to send a request to a server by using the open() and send() methods of the XMLHttpRequest object.</li>
+                    <li><span>xhr.onload = function()</span>With the XMLHttpRequest object a callback function is created to be executed when the request receives an answer.</li>
+                </ul>
+                <p><a href="enquire.html">Click here to the AJAX JS enhancement in enquire.html</a></p>
+                <p class="reference">Reference:
+                    <br>
+                    <a href="https://www.w3schools.com/js/js_ajax_http.asp">W3Schools: AJAX - The XMLHttpRequest Object</a>
+                    <br>
+                    <a href="https://www.w3schools.com/js/js_ajax_http_send.asp">W3Schools: AJAX - XMLHttpRequest</a>
+                </p>
+
+            </div>
+            <div class="content">
+                <p class = "enhancement-title">2. Timeout for a HTML webpage</p>
+                <p>The timeout enhancement is about counting the timer behind the webpage. After waiting for a certain period of time, the callback function will be executed.  </p>
+                <p>The code I implemented this feature: </p>
+                <ul>
+                    <li><span>const myTimeout = setTimeout(cancelOrder,300000);</span> In the payment page, I set the time to be 5 minutes, which means if the user has not completed the payment form, the function cancelOrder will be called. This function redirects back to the enquire.html. Inside this function has the if statement to clear the timeout. This helps to remove the timer out of the server when a webpage redirection occurs. This function of clearTimeout is similarly used when the user clicks checkout button.</li>
+                </ul>
+                <p><a href="payment.html">Click here to the TIMEOUT FOR WEBPAGE enhancement in payment.html page</a></p>
+
+                <p class="reference">Reference:
+                    <a href="https://www.w3schools.com/jsref/met_win_settimeout.asp">W3schools: Window setTimeout</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+<hr>
+<footer>
+    <p>&copy;Swinburne University of Technology</p>
+    <span>Mark up by: </span>Quang Nguyen
+</footer>
+</body>
+</html>

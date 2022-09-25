@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Assignment 1 - COS10011" />
+    <meta name="keywords" content="HTML5, CSS" />
+    <meta name="author" content="Quang Nguyen"  />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Checkout</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class = "nav-container">
+            <a href="index.html"><img src="images/big-tv-seeklogo.com.svg" alt="tv-purchase-logo" class = "logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="enquire.html">Enquire</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="enhancements.html">Enhancements</a></li>
+                    <li><a href="enhancements2.html">Enhancements 2</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="enquire-wrapper">
+        <div class="form-container">
+            <div class="form">
+                <!-- Form heading -->
+                <div class="heading">
+                    <h2>Checkout</h2>
+                </div>
+                <div id = "product-summary">
+                    <h2 class="checkout-heading">Your Choice</h2>
+                    <div class="container">
+                    
+                        <div class="img-container">
+                            <img id="product-photo" src="images/tv-product-1a.webp" alt="chosen-photo">
+                        </div>
+                        
+                        <div class="product-container">
+                            <div class="product-model">
+                                <h3>Product Model:</h3>
+                                <h3 id ="product-model">Blaupunkt Android TV</h3>
+                            </div>
+                            <div class="feature-container" id = "feature-container">
+                                
+                                
+                            </div>
+                            <div class="quantity-summary">
+                                <h3>Quantity</h3>
+                                <h4 class = "quantity-value">2</h4>
+                            </div>
+                            <div class="price-summary">
+                                <h3>Price Details</h3>
+                                <div class="subtotal price-container">
+                                    <h4>Subtotal:</h4>
+                                    <div class="price-with-quantity">
+                                        <h4 id="single-price">$500.00</h4>
+                                        <h4> x </h4>
+                                        <h4 class="quantity quantity-value">2</h4>
+                                    </div>
+                                </div>
+                                <div class="total price-container">
+                                    <h4>Total:</h4>
+                                    <h4 id="total-price">$10015.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id = "checkout-form" novalidate = "novalidate">
+                    <!-- Input hidden -->   
+                    <div id="hiddenInputs">
+                        <input type="hidden" id = "firstName" name="firstName" value="">
+                        <input type="hidden" id = "lastName" name="lastName" value="">
+                        <input type="hidden" id = "email" name="email" value="">
+                        <input type="hidden" id = "phone" name="phone" value="">
+                        <input type="hidden" id = "streetAddress" name="streetAddress" value="">
+                        <input type="hidden" id = "suburb" name="suburb" value="">
+                        <input type="hidden" id = "state" name="state" value="">
+                        <input type="hidden" id = "postcode" name="postcode" value="">
+                        <input type="hidden" id = "chosenProduct" name="chosenProduct" value="">
+                        <div id="hiddenFeatureInputs">
+
+                        </div>
+                        <input type="hidden" id = "quantity" name="quantity" value="">
+                        <input type="hidden" id = "hidden-total-price" name="total-price" value="">
+                    </div>
+                    <!-- Credit Card Information -->
+                    <h2 class="checkout-heading">Payment</h2>
+                    <div class="form-item">
+                        <label for="name" class="form-label">Cardholder name</label>
+                        <input type="text" name="name" id="name" maxlength="40"  required>
+                    </div>
+                    <div class="form-wrap" id="credit-card-container">
+                        <label for="credit-card" class="form-label">Credit Card Type</label>
+                        <div class="option-container">
+                            <div class="option">
+                                <input type="radio" name="credit-card-type" id="visa" value = "visa">
+                                <label for="visa">Visa</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="credit-card-type" id="mastercard" value = "mastercard">
+                                <label for="mastercard">Mastercard</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="credit-card-type" id="american-express" value = "american-express">
+                                <label for="american-express">American Express</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-wrap" id = "credit-card-info">
+                        <div class="form-item">
+                            <label for="number" class = "form-label">Credit Card Information</label>
+                            <input type="text" name="number" id="number" maxlength="16" pattern = "[A-Za-z]+" placeholder="Credit Card Number (15-16 digits)" required>
+                        </div>
+                        
+                        <div class="form-item">
+                            <label for="expiry">.</label>
+                            <input type="text" name="expiry" id="expiry" maxlength="5" placeholder="Credit Card Expiry (##-##)" required>
+                        </div>
+                    </div>
+             
+                
+
+                    <div class="btn">
+                        <button type="submit">Check Out</button>
+                        <button type="button" id="cancelOrder">Cancel Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<p style="text-align:center; margin-top:40px;background-color:yellow">Acknowledgement: <a href="https://www.youtube.com/watch?v=bDvdf7RypYs">Enquire Form From External Source</a></p>
+<hr>
+<footer>
+    <p>&copy;Swinburne University of Technology</p>
+    <span>Mark up by: </span>Quang Nguyen
+</footer>
+<script src="scripts/payment.js"></script>
+</body>
+</html>

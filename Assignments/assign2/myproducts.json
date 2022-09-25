@@ -1,0 +1,141 @@
+{
+    "product" : [
+        {
+            "model" : "",
+            "price" : "0",
+            "feature":[]
+        },
+        {
+            "model" : "blaupunkt-android",
+            "displayName" : "Blaupunkt 4K Ultra HD Android TV",
+            "image" : "images/tv-product-1a.webp",
+            "price" : "795",
+            "feature" : [
+                {
+                    "heading": "screen size",
+                    "option": 
+                    [
+                        {
+                            "name":"45 inches",
+                            "extraPrice":"0"                        
+                        },
+                        {
+                            "name":"55 inches",
+                            "extraPrice":"300"                        
+                        },
+                        {
+                            "name":"65 inches",
+                            "extraPrice":"700"                        
+                        },
+                        {
+                            "name":"75 inches",
+                            "extraPrice":"1000"                        
+                        }
+                    ]
+                },
+                {
+                    "heading": "display technology",
+                    "option": 
+                    [
+                        {
+                            "name":"LCD TV",
+                            "extraPrice":"0"                        
+                        },
+                        {
+                            "name":"LED TV",
+                            "extraPrice":"300"                        
+                        },
+                        {
+                            "name":"OLED TV",
+                            "extraPrice":"600"                        
+                        },
+                        {
+                            "name":"QLED TV",
+                            "extraPrice":"1000"                        
+                        }
+                    ]
+                },
+                {
+                    "heading": "internet connection",
+                    "option": 
+                    [
+                        {
+                            "name":"No",
+                            "extraPrice":"0"                        
+                        },
+                        {
+                            "name":"Yes",
+                            "extraPrice":"500"                        
+                        }                        
+                    ]
+                }
+            ]
+        },
+        {
+            "model" : "samsung the frame",
+            "displayName" : "Samsung The Frame QLED Smart TV",
+            "image" : "images/tv-product-2b.webp",
+            "price" : "2796",
+            "feature" : [
+                {
+                    "heading": "screen size",
+                    "option": 
+                    [
+                        {
+                            "name":"45 inches",
+                            "extraPrice":"0"                        
+                        },
+                        {
+                            "name":"55 inches",
+                            "extraPrice":"200"                        
+                        },
+                        {
+                            "name":"65 inches",
+                            "extraPrice":"900"                        
+                        },
+                        {
+                            "name":"75 inches",
+                            "extraPrice":"1500"                        
+                        }
+                    ]
+                },
+                {
+                    "heading": "internet connection",
+                    "option": 
+                    [
+                        {
+                            "name":"No",
+                            "extraPrice":"0"                        
+                        },
+                        {
+                            "name":"Yes",
+                            "extraPrice":"500"                        
+                        }  
+                    ]
+                }
+            ]
+        }, 
+        {
+            "model" : "samsung neo",
+            "displayName" : "Samsung Neo QLED 4k Smart Tv",
+            "image" : "images/tv-product-3a.jpg",
+            "price" : "16999",
+            "feature" : [
+                {
+                    "heading": "screen size",
+                    "option": 
+                    [
+                        {
+                            "name":"98 inches",
+                            "extraPrice":"0"                        
+                        },
+                        {
+                            "name":"128 inches",
+                            "extraPrice":"5000"                        
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

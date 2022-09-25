@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    
+    font-weight: 100;
+}
+body {
+    background-image: url(images/background.jpg);
+    background-color:#cccccc;
+    
+}
+header {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #FFB3B3;
+}
+header::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.nav-container {
+    width:80%;
+    margin: 0 auto;
+}
+.logo {
+    float:left;
+    width:200px;
+    padding: 10px 0;
+}
+nav {
+    float:right;
+}
+nav ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+nav li {
+    display:inline-block;
+    margin-left: 75px;
+    padding-top: 45px;
+    
+    position:relative;
+
+}
+nav a {
+    color:#444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:20px;
+}
+nav a:hover {
+    color:#fff;
+}
+nav a::before {
+    content:'';
+    display:block;
+    height:7px;
+    background-color: #fff;
+
+    position:absolute;
+    top:0px;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width:100%;
+}
+
+/* Start of index.html */
+
+.single-content-container {
+    margin: 1.5em 0;
+}
+.single-content-container .title {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+.single-content-container .content {
+    font-size: 1.1em;
+}
+.single-content-container span {
+    font-weight: bold;
+}
+.images{
+    border: 3px solid black;
+    background-color: #E9DAC1;
+    text-align: center;
+    padding: 1em;
+}
+.images img {
+    width:28%;
+    margin: 0 0.5em;
+    border: 1px solid black;
+}
+
+/* End of index.html */
+
+/* Start of about.html */
+.profile-section {
+    margin: 3em 15% 0;
+    text-align: center;
+}
+.profile-section .title {
+    font-size:4em;
+    font-weight: bold;
+    color: palevioletred;
+    text-transform: capitalize;
+}
+.profile-section .small-title {
+    margin: 0.5em 0 3em 0;
+    font-size:1.4em;
+    font-style:italic;
+}
+
+.details {
+    float:left;
+    text-align: left;
+    width:40%;
+}
+.heading {
+    font-size: 1.7em;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+.details dt{
+    font-size:1.3em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+.details dd {
+    font-size:1.3em;
+    margin: 0 0 1em 1em;
+}
+
+
+
+
+.flip-card {
+    background-color:transparent;
+    width:300px;
+    height:300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin:0 auto;
+    float:right;
+    border: double;
+    padding: 20px;
+}
+.flip-card img {
+    width:300px;
+    height:300px;
+    background-size: cover;
+}
+.flip-card figcaption {
+    margin-top: 22px;
+    font-size: 1.1em;
+    font-style: italic;
+}
+.flip-card-inner {
+    position: relative;
+    width:100%;
+    height:100%;
+    text-align: center;
+    transform-style:preserve-3d;
+    transition: transform 0.8s;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #FF7C7C;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .timetable{
+    float:left;
+    margin:5em 15% 0;
+    border: 1px solid;
+    padding: 1em;
+    background-color: #76549A;
+  }
+  .timetable .title {
+    clear:both;
+    font-size: 4em;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+  }
+  .myTimetable {
+    width:90%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin:0 auto;
+  }
+  .myTimetable th,   .timetable .title {
+    font-weight: bold;
+    color:#DF7861;
+  }
+  .myTimetable tbody {
+      background-color: #FCF8E8;
+  }
+  .myTimetable tbody tr td:first-child {
+    background-color: #94B49F;
+    font-weight: bold;
+  }
+  .myTimetable td {
+    border:1px solid black;
+    padding:6px;
+    text-align: center;
+  }
+  .myTimetable .subject-code a {
+    text-decoration: none;
+    font-weight: bold;
+
+  }
+ .myTimetable .class-type {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .myTimetable .class-type {
+    font-style: italic;
+  }
+  .myTimetable .class-location {
+    text-transform: capitalize;
+  }
+  .cos20015 {
+    background-color: #A5BECC;
+  }
+  .swe20001 {
+    background-color: #F1A661;
+  }
+  .cos10011 {
+    background-color: #61C0BF;
+  }
+  .eee20003 {
+    background-color: #FFB6B9;
+  }
+  .mme30001 {
+    background-color: #FFCCB3;
+  }
+
+.footer-about {
+    clear:both;
+}
+/* End of about.html */
+
+
+/* Start of enquire.html */
+:root {
+    --dark-purple:#363062;
+    --form-label: #C06C84;
+    --form-border: #6C5B7B;
+    --button: #363062;
+    --background:#F6F6F6;
+}
+.enquire-wrapper {
+    max-width: 1000px;
+    width:100%;
+    margin:30px auto 0;
+    padding:10px;
+}
+.form-container {
+    background:#fff;
+    padding:30px;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.15);
+    border-radius: 3px;
+}
+.heading {
+    background: var(--dark-purple);
+    margin: -30px;
+    text-align: center;
+    color:#fff;
+    padding:10px;
+    margin-bottom:35px;
+}
+.form-item {
+    margin-bottom: 25px;
+}
+.form-label {
+    font-size:1.1em;
+    font-weight: bold;
+    color:var(--form-label);
+}
+.fullname,
+.email-phone,
+.state-postcode {
+    display: flex;
+}
+.prefer-contact-radio-btns {
+    display: flex;
+    justify-content:space-evenly;
+}
+.fullname .form-item,
+.email-phone .form-item,
+.state-postcode .form-item {
+    width:50%;
+}
+.fullname .form-item:first-child,
+.email-phone .form-item:first-child,
+.state-postcode .form-item:first-child {
+    margin-right:5%;
+}
+.fullname .form-item:nth-child(2) label {
+    visibility: hidden;
+}
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item select {
+    width:100%;
+    padding:10px;
+    font-size:16px;
+    border:1px solid #dadce0;
+    border-radius:3px;
+    margin-top:5px;
+}
+.form-item input[type="text"]:focus,
+.form-item input[type="email"]:focus,
+.form-item select:focus,
+.form-item textarea:focus{
+    border-color:var(--form-border);
+}
+
+.form-container fieldset {
+    padding: 3% 3% 0;
+    background-color: var(--background);
+    border: 1px solid var(--dark-purple);
+    border-radius: 5px;
+}
+.form-container legend {
+    border-radius: 3px;
+    background-color: var(--dark-purple);
+    color:white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding:5px 10px;
+}
+
+.prefer-contact .form-label{
+    margin: 10px 0;
+}
+.sub-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0 20px;
+}
+optgroup {
+    font-weight: bold;
+}
+.product-feature .option:first-of-type{
+    margin-top: 20px;
+}
+.product-feature .option {
+    display:block;
+    margin-top: 10px;
+}
+.comment-area textarea {
+    width: 100%;
+    padding: 15px 10px 0;
+    margin-top: 5px;
+    resize: none;
+}
+.comment-area textarea::placeholder {
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
+.btn {
+    display: flex;
+}
+.btn button:first-of-type{
+    margin-right:5%;
+}
+.btn button {
+    background-color: var(--button);
+    border:1px solid var(--button);
+    padding:10px;
+    width:50%;
+    font-size:16px;
+    letter-spacing: 1px;
+    border-radius:5px;
+
+    font-weight: bold;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn button:hover {
+    background-color: #363062;
+    transition: 0.7s;
+}
+/* End of enquire.html */
+
+/* Start of product.html */
+.wrapper {
+    font-family: 'Merriweather', serif;
+    width:60%;
+    margin: 5vh auto 0;
+}
+.big-heading h1 {
+    font: 3em 'Montserrat', sans-serif;  
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+.product-item {
+    display: flex;
+}
+.product-image {
+    max-width:60%;
+    text-align: center;
+}
+.product-image img {
+    width:35%;
+    margin:10px;
+}
+.product-image img:hover {
+    border: 0.5px solid grey;
+    transform: scale(1.2);
+    transition: all 0.4s ease-in-out;
+}
+aside{
+    float:right;
+    width:25vw;
+    border: 5px solid #364F6B;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: aliceblue;
+}
+.product-logo {
+    width: 7vw;
+}
+.product-name h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.overview-item {
+    width:90%;
+    margin: 10px auto;
+}
+.content-containter {
+    margin: 20px 0;
+}
+.overview-heading {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left:10px;
+    margin-bottom: 5px;}
+.title {
+    font-weight: bold;
+    font-size:1.3em;
+    margin-left:20px;
+}
+.choice-container {
+    margin: 20px 0 20px 20px;
+    text-align: left;
+}
+.choice {
+    display:inline-block;
+    border:2.5px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+    width:20%;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+.choice.active {
+    background: #D75281;
+    color:#fff;
+}
+.choice:hover{
+    background: #D75281;
+    color:#fff;
+    transition: all 0.3s ease;
+}
+.product-price {
+    margin: 20px 0 20px 20px;
+}
+.product-price button{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #D75281;
+    color:#fff;
+    font-size:2.5em;
+    font-weight: bold;
+    padding: 5px 30px;
+    display: inline;
+    cursor: pointer;
+}
+.product-price button:hover {
+    transform:scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.horizontal-line { 
+    margin: 2% 0;
+    border-top: 3px solid;
+}
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table-container .table-header {
+    width: 30%;
+    padding:10px 5px;
+}
+.table-container p {
+    font-size:1.4em;
+    font-weight: bold;
+    font-style: italic;
+}
+.table-container img {
+    width:60%;
+}
+.table-container .table-heading {
+    padding:30px 10px;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+}
+.table-container .price {
+    font-size: 2em;
+    background-color: #D75281;
+    color:white;
+    font-weight: bold;
+}
+.table-container th.table-header {
+    background-color: #E9DAC1;
+}
+
+.table-container td {
+    font-size: 1.3em;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 0 2em;
+}
+footer {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1em;
+    background-color: #850E35;
+    color:#FFF5E4;
+    padding: 50px 0;
+    text-align: center;
+}
+hr {
+    margin:50px 0 0 0;
+    border:2px solid black;
+}
+footer{
+    font-size: 0.8em;
+}
+footer p {
+    margin-bottom: 10px;
+}
+footer span {
+    font-weight: bold;
+}
+/* End of product.html */
+
+/* Start of enhancement.html */
+.enhancement-intro {
+    font-size:1.5em;
+    font-weight: bold;
+}
+.wrapper .content, .reference {
+    margin: 20px 0;
+}
+.wrapper .enhancement-title, .reference {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.wrapper .content p:nth-of-type(2) {
+    font-style: italic;
+}
+span  {
+    font-weight: bold;
+}
+/* End of enhancement.html */

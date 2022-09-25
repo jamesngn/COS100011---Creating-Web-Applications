@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Assignment 1 - COS10011" />
+    <meta name="keywords" content="HTML5, CSS" />
+    <meta name="author" content="Quang Nguyen"  />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancements Page</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class = "nav-container">
+            <a href="index.html"><img src="images/big-tv-seeklogo.com.svg" alt="tv-purchase-logo" class = "logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="enquire.html">Enquire</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="enhancements.html">Enhancements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="enhancement-intro">I made two enhancements to my assignment. These are: </div>
+        <div>
+            <div class="content">
+                <p class = "enhancement-title">1. Flip Card</p>
+                <p>In the lectures of the unit from week 1 to week 4, the CSS part does not focus on how to animate some elements in the webpages. Therefore, I applied the flippable card to my assignment as a way to improve the user experience. Moreover, this is a good way for some web developers to reveal secret information to the user through placing them behind the card. When the mouse hovers the image, it will be flipped and the information behind the image is revealed</p>
+                <p>The code I implemented this feature: </p>
+                <ul>
+                    <li><span>transform-style:preserve-3d;</span> This CSS line of code is implemented inside the class flip-card-inner to define how the nested elements are rendered in 3D space.</li>
+                    <li><span>transform: rotateY(180deg);</span>This CSS line of code is implemented inside the class of flip-card-inner when the flip-card is "hover". This helps the card to rotate in the vertical direction with an angle of 180 degrees.</li>
+                    <li><span>transform: rotateY(180deg);</span>Again with this code, but now it is placed inside the class .flip-card-back. This helps when the card is no longer hovered and in the position of the back, it will be flipped to the front side.</li>
+                </ul>
+                <p><a href="about.html#flip-card">Click here to the FLIP CARD enhancement</a></p>
+                <p class="reference">Reference:
+                    <a href="https://www.w3schools.com/howto/howto_css_flip_card.asp">W3Schools: How TO - Flip Cards</a>
+                </p>
+
+            </div>
+            <div class="content">
+                <p class = "enhancement-title">2. Flexbox</p>
+                <p>In the lectures of the unit from week 1 to week 4, the CSS part just only mentions the float or relation/absolute position to manipulate the position of each element in the webpage. However, in this assignment, I implemented the flexbox as another to change the position of element in the webpage. The reason why I chose the flexbox instead of float or relative/absolute position is because I want to lay a collection of items in one direction or another. Thanks to the use of flexbox, my product page looks more professional. Each product now has images on the left side and the content on the right side of the page, which helps the reader easily capture the information. </p>
+                <p>The code I implemented this feature: </p>
+                <ul>
+                    <li><span>display:flex;</span> In the product page, I use this code for the class product-item. This class acts as a container of a single TV product. By using this enhancement, it helps the images container and the content container to be flexible in terms of size. This helps them to lay in the horizontal direction of the product container.</li>
+                    <li><span>display: flex;</span>. Moreover, I also implemented this enahancement in the enquire.html page. This helps to lay the input box in one horizontal direction. For example, the first and last name input box are laid in the same line due to the use of flexbox. Furthermore, it is also implemented in the two buttons (submit and reset).</li>
+                </ul>
+                <p><a href="product.html#product-item">Click here to the FLEXBOX enhancement in product.html page</a></p>
+                <p><a href="enquire.html#fullname">Click here to the FLEXBOX enhancement in enquire.html page</a></p>
+
+                <p class="reference">Reference:
+                    <a href="https://www.w3schools.com/css/css3_flexbox.asp">W3schools: CSS Flexbox</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    <footer>
+        <p>&copy;Swinburne University of Technology</p>
+        <span>Mark up by: </span>Quang Nguyen
+    </footer>
+</body>
+</html>

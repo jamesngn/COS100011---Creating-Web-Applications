@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Assignment 1 - COS10011" />
+    <meta name="keywords" content="HTML5, CSS" />
+    <meta name="author" content="Quang Nguyen"  />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class = "nav-container">
+            <a href="index.html"><img src="images/big-tv-seeklogo.com.svg" alt="tv-purchase-logo" class = "logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="enquire.html">Enquire</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="enhancements.html">Enhancements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="enquire-wrapper">
+        <div class="form-container">
+            <div class="form">
+                <!-- Form heading -->
+                <div class="heading">
+                    <h2>Product Enquiry Form</h2>
+                </div>
+                
+                <!-- Form starts from here -->
+                <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+                    <!-- Full Name -->
+                    <div class="form-wrap fullname" id = "fullname">
+                        <div class="form-item">
+                            <label for="fName" class = "form-label">Full Name</label>
+                            <input type="text" name="fName" id="fName" maxlength="25" pattern = "[A-Za-z]+" placeholder="First" required>
+                        </div>
+                        
+                        <div class="form-item">
+                            <label for="lName">.</label>
+                            <input type="text" name="lName" id="lName" maxlength="25" pattern = "[A-Za-z]+" placeholder="Last" required>
+                        </div>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-wrap email-phone">
+                        <div class="form-item">
+                            <label for="email" class = "form-label">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="phone-number" class = "form-label">Phone</label>
+                            <input type="text" name="phone-number" id="phone-number" placeholder = "#### ### ###" pattern = "\d{10}" maxlength="10" required>
+                        </div>
+                    </div>
+
+                    
+                    <fieldset>
+                        <legend>Address</legend>
+                        <div class="form-item">
+                            <input type="text" name="street" id="street" maxlength="40" placeholder="Street Address" required>
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="suburb" id="suburb" maxlength="20" placeholder="Suburb/Town" required>
+                        </div>
+                        <div class="form-wrapper state-postcode">
+                            <div class="form-item">
+                                <label for="state" class = "form-label">State</label>
+                                <select name="state" id="state" required>
+                                    <option value="">Please Select</option>
+                                    <option value="VIC">VIC</option>
+                                    <option value="NSW">NSW</option>
+                                    <option value="QLD">QLD</option>
+                                    <option value="NT">NT</option>
+                                    <option value="WA">WA</option>
+                                    <option value="SA">SA</option>
+                                    <option value="TAS">TAS</option>
+                                    <option value="ACT">ACT</option>
+                                </select>
+                            </div>
+
+                            <div class="form-item">
+                                <label for="postcode" class = "form-label">Postcode</label>
+                                <input type="text" name="postcode" id="postcode" pattern = "\d{4}" maxlength="4" required>
+                            </div>
+                        </div>
+                    </fieldset>   
+                    
+                    <div class="form-wrapper prefer-contact">
+                        <div>
+                            <label for="phone-contact" class = "form-label">Preferred Contact</label>
+                        </div>
+                        <div class="form-item prefer-contact-radio-btns">
+                            <div>
+                                <input type="radio" name="contact" id="phone-contact" value = "phone" checked>
+                                <label for="phone-contact">Phone</label>
+                            </div>
+    
+                            <div>
+                                <input type="radio" name="contact" id="email-contact" value = "email">
+                                <label for="email-contact">Email</label>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" name="contact" id="post-contact" value = "post">
+                                <label for="post-contact">Post</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    <br>
+                    <div class="sub-heading">PRODUCT INFORMATION</div>
+                    <div class="form-wrapper product-type">
+                        <div class="form-item">
+                            <label for="product" class = "form-label">Product Type</label>
+                            <select name="product" id="product" required>
+                                <option value="" selected>Please select</option>
+                                <optgroup label="Types of Televisions by Technology">
+                                    <option value="QLED">Quantum Light-Emitting Diode (QLED)</option>
+                                    <option value="OLED">Organic Light-Emitting Diode (OLED) Display</option>
+                                    <option value="LED">LED TVs</option>
+                                    <option value="LCD">Liquid Crystal Display (LCD)</option>
+                                    <option value="DLP">Digital Light Processing (DLP)</option>
+                                    <option value="Plasma">Plasma Panels</option>
+                                    <option value="Direct-View TV">Direct-View TV</option>
+                                    <option value="ACT">ACT</option>
+                                </optgroup>
+                                <optgroup label="By Screen Type">
+                                    <option value="Flat Screen">Flat Screen</option>
+                                    <option value="Curved Screen">Curved Screen</option>
+                                </optgroup>
+                                <optgroup label="By Resolution">
+                                    <option value="720p">720p TV</option>
+                                    <option value="1080p">1080p TV</option>
+                                    <option value="4k">4K Resolution</option>
+                                    <option value="8k">8K Resolution</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-wrapper product-feature">
+                        <div class="form-item" >
+                            <label for="user-interface" class = "form-label">Product Feature</label>
+
+                            <div class="option">
+                                <input type="checkbox" id="user-interface" name="feature1" value="user-interface" checked>
+                                <label for="user-interface">User-friendly interface</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="checkbox" id="video-streaming" name="feature2" value="video-streaming">
+                                <label for="video-streaming">Video streaming services</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="checkbox" id="4k-streaming" name="feature3" value="4k-streaming">
+                                <label for="4k-streaming">Streaming UHD Video in 4K</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="checkbox" id="music-streaming" name="feature4" value="music-streaming">
+                                <label for="music-streaming">Online Music Streaming</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="checkbox" id="media-player" name="feature5" value="media-player">
+                                <label for="media-player">Media Player</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="checkbox" id="search-engine" name="feature6" value="search-engine">
+                                <label for="search-engine">A Universal Search Engine</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="checkbox" id="app-store" name="feature" value="app-store">
+                                <label for="app-store">App Store</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-wrapper comment-area">
+                        <div class="form-item">
+                            <label for="comment" class = "form-label">Comment</label>
+                            <br>
+                            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment about the particular aspect of TV products you are interested in."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="btn">
+                        <button type="submit">Send</button>
+                        <button type="reset">Reset</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <p style="text-align:center; margin-top:40px;background-color:yellow">Acknowledgement: <a href="https://www.youtube.com/watch?v=bDvdf7RypYs">Enquire Form From External Source</a></p>
+    <hr>
+    <footer>
+        <p>&copy;Swinburne University of Technology</p>
+        <span>Mark up by: </span>Quang Nguyen
+    </footer>
+</body>
+</html>
